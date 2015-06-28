@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bgcolor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.miniinthebox.android">
+    <ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" style="@style/vllff">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/rl_myorder" android:background="@drawable/my_center_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+                    <ImageView android:id="@id/imageview_myorder" android:background="@drawable/myorder_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                    <TextView android:id="@id/myorder" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/imageview_myorder" android:layout_centerHorizontal="true" style="@style/MeTextStyle" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rl_myfav" android:background="@drawable/my_center_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+                    <ImageView android:id="@id/imageview_myfav" android:background="@drawable/myfavorite_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                    <TextView android:id="@id/myfav" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/imageview_myfav" style="@style/MeTextStyle" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <RelativeLayout android:id="@id/rl_myaddress" android:background="@drawable/my_center_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+                    <ImageView android:id="@id/imageview_myaddress" android:background="@drawable/ddress_book_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                    <TextView android:id="@id/myaddress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/imageview_myaddress" style="@style/MeTextStyle" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rl_myaccount" android:background="@drawable/my_center_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+                    <ImageView android:id="@id/imageview_myaccount" android:background="@drawable/myaccount_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                    <TextView android:id="@id/myaccount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/imageview_myaccount" style="@style/MeTextStyle" />
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/login" android:background="@drawable/log_out_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="log Out" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

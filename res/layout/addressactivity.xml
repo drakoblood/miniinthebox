@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bgcolor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.miniinthebox.android">
+    <include layout="@layout/leftrighttitlelayout" />
+    <com.miniinthebox.android.view.LoadingInfoView android:id="@id/nowallitem" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/AddressTopLayoutStyle">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AddressLayoutStyle">
+                <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textColor="@color/red" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" style="@style/AddressTextStyle" />
+                    <TextView android:id="@id/textViewFirstName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="@string/FirstName" android:layout_toRightOf="@id/textView1" style="@style/AddressTextStyle" />
+                    <EditText android:id="@id/firstname" android:background="@drawable/inputbg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/textView1" android:layout_alignLeft="@id/textView1" style="@style/AddressTextStyle" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_weight="1.0">
+                    <TextView android:textColor="@color/red" android:id="@id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" style="@style/AddressTextStyle" />
+                    <TextView android:id="@id/textViewLastName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="@string/LastName" android:layout_toRightOf="@id/textView3" style="@style/AddressTextStyle" />
+                    <EditText android:id="@id/lastname" android:background="@drawable/inputbg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/textView3" android:layout_alignLeft="@id/textView3" style="@style/AddressTextStyle" />
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AddressLayoutStyle">
+                <TextView android:textColor="@color/red" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" style="@style/AddressTextStyle" />
+                <TextView android:id="@id/textViewAddress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="@string/Address" android:layout_toRightOf="@id/textView1" style="@style/AddressTextStyle" />
+                <EditText android:id="@id/address" android:background="@drawable/inputbg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/textView1" android:layout_alignLeft="@id/textView1" style="@style/AddressTextStyle" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AddressLayoutStyle">
+                <TextView android:textColor="@color/red" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" style="@style/AddressTextStyle" />
+                <TextView android:id="@id/textViewAddressExtra" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="@string/AddressExtra" android:layout_toRightOf="@id/textView1" style="@style/AddressTextStyle" />
+                <EditText android:id="@id/address_extra" android:background="@drawable/inputbg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/textView1" android:layout_alignLeft="@id/textView1" style="@style/AddressTextStyle" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AddressLayoutStyle">
+                <TextView android:textColor="@color/red" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" style="@style/AddressTextStyle" />
+                <TextView android:id="@id/textViewcity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="@string/City" android:layout_toRightOf="@id/textView1" style="@style/AddressTextStyle" />
+                <EditText android:id="@id/city" android:background="@drawable/inputbg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/textView1" android:layout_alignLeft="@id/textView1" style="@style/AddressTextStyle" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AddressLayoutStyle">
+                <TextView android:textColor="@color/red" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" style="@style/AddressTextStyle" />
+                <TextView android:id="@id/textViewaddresscountry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="@string/SelectYourCountryRegion" android:layout_toRightOf="@id/textView1" style="@style/AddressTextStyle" />
+                <EditText android:id="@id/country" android:background="@drawable/inputbg" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawableRight="@drawable/indicator_unfolded_status_normal" android:layout_below="@id/textView1" style="@style/AddressTextStyle" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/zoneRlin" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AddressLayoutStyle">
+                <TextView android:textColor="@color/red" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" style="@style/AddressTextStyle" />
+                <TextView android:id="@id/textViewaddresszone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="@string/SelectYourStateProvinceRegion" android:layout_toRightOf="@id/textView1" style="@style/AddressTextStyle" />
+                <EditText android:id="@id/zone" android:background="@drawable/inputbg" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawableRight="@drawable/indicator_unfolded_status_normal" android:layout_below="@id/textView1" style="@style/AddressTextStyle" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/stateRl" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AddressLayoutStyle">
+                <TextView android:textColor="@color/red" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" style="@style/AddressTextStyle" />
+                <TextView android:id="@id/textViewaddressstate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="@string/StateProvinceRegion" android:layout_toRightOf="@id/textView1" style="@style/AddressTextStyle" />
+                <EditText android:id="@id/state" android:background="@drawable/inputbg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/textView1" android:layout_alignLeft="@id/textView1" style="@style/AddressTextStyle" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/taxcodetypeRlin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AddressLayoutStyle">
+                <TextView android:textColor="@color/red" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" style="@style/AddressTextStyle" />
+                <TextView android:id="@id/textViewselecttaxcodetype" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="@string/selecttaxcodetype" android:layout_toRightOf="@id/textView1" style="@style/AddressTextStyle" />
+                <EditText android:id="@id/tcodetype" android:background="@drawable/inputbg" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawableRight="@drawable/indicator_unfolded_status_normal" android:layout_below="@id/textView1" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/taxcodeRlin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AddressLayoutStyle">
+                <TextView android:textColor="@color/red" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" style="@style/AddressTextStyle" />
+                <TextView android:id="@id/textViewtaxcode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="@string/TaxCode" android:layout_toRightOf="@id/textView1" style="@style/AddressTextStyle" />
+                <EditText android:id="@id/tcode" android:background="@drawable/inputbg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/textView1" android:layout_alignLeft="@id/textView1" style="@style/AddressTextStyle" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AddressLayoutStyle">
+                <TextView android:textColor="@color/red" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" style="@style/AddressTextStyle" />
+                <TextView android:id="@id/textViewZIP_PostalCode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="@string/ZIPPostalCode" android:layout_toRightOf="@id/textView1" style="@style/AddressTextStyle" />
+                <EditText android:id="@id/zip" android:background="@drawable/inputbg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/textView1" android:layout_alignLeft="@id/textView1" style="@style/AddressTextStyle" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AddressLayoutStyle">
+                <TextView android:textColor="@color/red" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" style="@style/AddressTextStyle" />
+                <TextView android:id="@id/textViewphonePhoneNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="@string/PhoneNumber" android:layout_toRightOf="@id/textView1" style="@style/AddressTextStyle" />
+                <EditText android:id="@id/phone" android:background="@drawable/inputbg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/textView1" android:layout_alignLeft="@id/textView1" style="@style/AddressTextStyle" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AddressLayoutStyle">
+                <Button android:textColor="@color/white" android:id="@id/delete" android:background="@drawable/cartbutton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/Delete" style="@style/AddressTextStyle" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

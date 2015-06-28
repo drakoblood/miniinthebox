@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bgcolor" style="@style/vllff"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/top_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/detailback" style="@style/backstyle" />
+        <ImageView android:id="@id/split" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/detailback" />
+        <TextView android:id="@id/huodongtitle" style="@style/titlestyle" />
+        <ImageView android:id="@id/buycar" android:visibility="invisible" style="@style/rightstyle" />
+        <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/menu_local_shortcut_number" android:background="@drawable/indicator_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_marginRight="12.0dip" android:includeFontPadding="false" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <ImageView android:background="@color/me_split_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:id="@id/relativeLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <WebView android:id="@id/webviewshow" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.miniinthebox.android.view.LoadingInfoView android:id="@id/errorview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="TextView" />
+    </RelativeLayout>
+</LinearLayout>

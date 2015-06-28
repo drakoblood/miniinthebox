@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/MyAccountLayoutStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/textViewProfile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Profile" style="@style/MyAccountTextStyle1" />
+    <ImageView android:id="@id/imageView_SplitLine" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@color/me_split_color" />
+    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">"
+<ImageView android:id="@id/imageView_into_myinfor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/new_new" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:id="@id/textViewProfile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sex" style="@style/MyAccountTextStyle1" />
+    </LinearLayout>
+    <RadioGroup android:orientation="horizontal" android:id="@id/radioGroup1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioButton android:id="@id/radio0" android:background="@drawable/myaccount_me_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:button="@null" android:text="@string/Male" android:drawableLeft="@drawable/myaccount_men" android:drawablePadding="10.0dip" android:layout_weight="1.0" style="@style/MyAccountTextStyle3" />
+        <RadioButton android:id="@id/radio1" android:background="@drawable/myaccount_me_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:checked="true" android:button="@null" android:text="@string/Female" android:drawableLeft="@drawable/myaccount_women" android:drawablePadding="10.0dip" android:layout_weight="1.0" style="@style/MyAccountTextStyle3" />
+    </RadioGroup>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/imageView_into_myinfor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/new_new" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:id="@id/textViewProfile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="First name" style="@style/MyAccountTextStyle1" />
+            </LinearLayout>
+            <EditText android:id="@id/editText_firstname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="10" android:layout_weight="1.0" android:inputType="textPersonName" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/imageView_into_myinfor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/new_new" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:id="@id/textViewProfile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Last name" style="@style/MyAccountTextStyle1" />
+            </LinearLayout>
+            <EditText android:id="@id/editText_lastname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="10" android:layout_weight="1.0" android:inputType="textPersonName" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/imageView_into_myinfor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/new_new" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:id="@id/textViewProfile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Your Phone" style="@style/MyAccountTextStyle1" />
+        </LinearLayout>
+        <EditText android:id="@id/editText_phone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:ems="10" android:layout_weight="1.0" android:inputType="textPersonName" />
+    </LinearLayout>
+</LinearLayout>

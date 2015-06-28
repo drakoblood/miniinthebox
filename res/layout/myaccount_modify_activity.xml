@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bgcolor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.miniinthebox.android">
+    <include layout="@layout/twobuttontitlelayout" />
+    <ImageView android:id="@id/imageView_SplitLine" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@color/me_split_color" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" style="@style/MyAccountLayoutStyle" />
+</LinearLayout>

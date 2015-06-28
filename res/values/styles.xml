@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="com_facebook_loginview_default_style" parent="@*android:style/Widget.Button">
+        <item name="android:textSize">@dimen/com_facebook_loginview_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/com_facebook_loginview_text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/com_facebook_button_blue</item>
+        <item name="android:paddingLeft">@dimen/com_facebook_loginview_padding_left</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="com_facebook_loginview_silver_style" parent="@*android:style/Widget.Button">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff4b5164</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/com_facebook_loginbutton_silver</item>
+        <item name="android:height">44.0dip</item>
+        <item name="android:width">205.0dip</item>
+    </style>
+    <style name="DefaultTheme" parent="@*android:style/Theme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:scrollbarThumbVertical">@drawable/scrollbar_vertical</item>
+    </style>
+    <style name="BoxDlg" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/dialog_bg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="vllff">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="bl_rating" parent="@*android:style/Widget.RatingBar">
+        <item name="android:maxHeight">30.0dip</item>
+        <item name="android:progressDrawable">@drawable/bl_ratingbar</item>
+        <item name="android:minHeight">30.0dip</item>
+    </style>
+    <style name="backstyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:src">@drawable/selector_returns</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="rightstyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+        <item name="android:src">@drawable/button_2_hover</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="DataSheetAnimation" parent="@*android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/push_up_in</item>
+    </style>
+    <style name="Theme.Translucent" parent="@*android:style/Theme.Translucent">
+        <item name="android:colorForeground">#ffffffff</item>
+        <item name="android:windowBackground">@drawable/translucent_background</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="Theme.Black" parent="@*android:style/Theme.Translucent">
+        <item name="android:colorForeground">#ffffffff</item>
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="Transparent_Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+    <style name="titlestyle">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+    <style name="usercentertextstylemultiline">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ff333333</item>
+    </style>
+    <style name="usercentertextstyle">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ff333333</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingRight">5.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="usercentertextstylenomax">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ff333333</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingRight">13.299988dip</item>
+    </style>
+    <style name="popdialog" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/transparent_drawable</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowAnimationStyle">@style/DataSheetAnimation</item>
+    </style>
+    <style name="bigbuttonstyle">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:background">@drawable/red_button</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+    </style>
+    <style name="SearchStyle">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="AddressStyle">
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_marginTop">@dimen/address_layout_margin1</item>
+    </style>
+    <style name="AddressTopLayoutStyle">
+        <item name="android:background">@color/white</item>
+        <item name="android:padding">10.0dip</item>
+    </style>
+    <style name="AddressLayoutStyle">
+        <item name="android:background">@color/white</item>
+        <item name="android:paddingLeft">0.0dip</item>
+        <item name="android:paddingRight">0.0dip</item>
+    </style>
+    <style name="AddressTextStyle" parent="@style/MyAccount">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:padding">6.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="MeTextStyle">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">10.0sp</item>
+    </style>
+    <style name="bigeditstyle">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:paddingLeft">6.0dip</item>
+        <item name="android:paddingRight">6.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="popanimation" />
+    <style name="MyAccount" />
+    <style name="MyAccountLayoutStyle" parent="@style/MyAccount">
+        <item name="android:background">@color/white</item>
+        <item name="android:padding">10.0dip</item>
+        <item name="android:layout_marginLeft">@dimen/myaccount_layout_margintop</item>
+        <item name="android:layout_marginRight">@dimen/myaccount_layout_margintop</item>
+    </style>
+    <style name="MyAccountTextStyle1" parent="@style/MyAccount">
+        <item name="android:textSize">@dimen/myaccount_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/me_graylight</item>
+        <item name="android:layout_marginTop">8.0dip</item>
+        <item name="android:layout_marginBottom">8.0dip</item>
+    </style>
+    <style name="MyAddressTextStyle1" parent="@style/MyAccount">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="MyAddressTextStyle2" parent="@style/MyAccount">
+        <item name="android:textSize">10.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff838383</item>
+        <item name="android:fontFamily">Atial</item>
+    </style>
+    <style name="MyAccountTextStyle2" parent="@style/MyAccount">
+        <item name="android:textSize">@dimen/myaccount_text_size</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:padding">2.0dip</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="MyAccountTextStyle3" parent="@style/MyAccount">
+        <item name="android:textSize">@dimen/myaccount_text_size</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="MyAddress" />
+    <style name="MyAddressItemName" parent="@style/MyAddress">
+        <item name="android:textSize">@dimen/myaddress_item_name_size</item>
+        <item name="android:textColor">@color/me_address_second_name_color</item>
+        <item name="android:paddingTop">5.0dip</item>
+        <item name="android:paddingBottom">5.0dip</item>
+    </style>
+    <style name="MyAddressLayoutStyle" parent="@style/MyAddress">
+        <item name="android:background">@color/white</item>
+        <item name="android:padding">0.0dip</item>
+        <item name="android:layout_marginLeft">@dimen/address_layout_margin2</item>
+        <item name="android:layout_marginTop">@dimen/address_layout_margin1</item>
+        <item name="android:layout_marginRight">@dimen/address_layout_margin2</item>
+    </style>
+    <style name="MyAddressLayoutStyle1" parent="@style/MyAddress">
+        <item name="android:background">@color/white</item>
+        <item name="android:padding">5.0dip</item>
+        <item name="android:layout_marginLeft">@dimen/address_layout_margin1</item>
+        <item name="android:layout_marginRight">@dimen/address_layout_margin1</item>
+        <item name="android:layout_marginBottom">@dimen/address_layout_margin1</item>
+    </style>
+    <style name="MyAddressItemAddress" parent="@style/MyAddress">
+        <item name="android:textSize">@dimen/myaddress_item_address_size</item>
+        <item name="android:textColor">@color/me_graylight</item>
+    </style>
+    <style name="MyAddressItemPhone" parent="@style/MyAddress">
+        <item name="android:textSize">@dimen/myaddress_item_address_size</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="MyFavRatingBar" parent="@*android:style/Widget.RatingBar">
+        <item name="android:maxHeight">12.0dip</item>
+        <item name="android:progressDrawable">@drawable/myfav_rating_bar</item>
+        <item name="android:minHeight">12.0dip</item>
+        <item name="android:numStars">5</item>
+        <item name="android:isIndicator">true</item>
+        <item name="android:inputType">number</item>
+    </style>
+    <style name="MyFavRatingBarSmall" parent="@*android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/myfav_rating_bar_smla</item>
+        <item name="android:minHeight">10.0dip</item>
+        <item name="android:numStars">5</item>
+        <item name="android:isIndicator">true</item>
+        <item name="android:inputType">number</item>
+    </style>
+    <style name="styleName" parent="@*android:style/Widget.TextView">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@*android:color/black</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="bl_sort_item" parent="@*android:style/Widget.TextView">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@color/sort_item_n</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="MMTheme.DataSheet" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/mm_trans</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/DataSheetAnimation</item>
+        <item name="android:background">@drawable/mm_trans</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+</resources>

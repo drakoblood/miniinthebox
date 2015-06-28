@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bgcolor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/titlerl" android:background="@drawable/top_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/back" android:layout_marginLeft="10.0dip" style="@style/backstyle" />
+        <ImageView android:id="@id/buycar" style="@style/rightstyle" />
+        <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/menu_local_shortcut_number" android:background="@drawable/indicator_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_marginRight="12.0dip" android:includeFontPadding="false" android:layout_alignParentRight="true" />
+        <TextView android:textStyle="bold" android:id="@id/title" android:focusable="true" android:focusableInTouchMode="true" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/buycar" android:layout_toRightOf="@id/back" style="@style/titlestyle" />
+    </RelativeLayout>
+    <com.miniinthebox.android.view.LoadingInfoView android:id="@id/refine_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ListView android:id="@id/refine_list" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:divider="#ffdddddd" android:dividerHeight="1.0dip" />
+</LinearLayout>

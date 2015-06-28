@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/shipaddress" android:background="@color/white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="@color/buttoncolor" android:id="@id/textViewProfile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ShippingAddress" />
+    <ImageView android:id="@id/imageView_SplitLine" android:background="@color/me_split_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="5.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/imageview_detail">
+            <TextView android:textColor="@color/black" android:id="@id/textView_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textColor="@color/buttoncolor" android:id="@id/textView_address" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:id="@id/textView_state" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textColor="@color/black" android:id="@id/textView_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView android:id="@id/imageview_detail" android:background="@drawable/icon_1_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

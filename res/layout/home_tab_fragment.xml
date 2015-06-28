@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/scrollview" android:background="@color/bgcolor" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:easymob="http://schemas.android.com/apk/res/com.miniinthebox.android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/trip_rl_home_banner" android:background="@drawable/bg_home_defaultpic_tiles" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+            <com.miniinthebox.android.view.circle_flow.ViewFlow android:id="@id/trip_home_banner_viewflow" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <View android:background="@drawable/bg_home_banner" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/trip_home_banner_viewflow" android:layout_alignTop="@id/trip_home_banner_viewflow" android:layout_alignRight="@id/trip_home_banner_viewflow" android:layout_alignBottom="@id/trip_home_banner_viewflow" />
+            <LinearLayout android:gravity="center" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignBottom="@id/trip_home_banner_viewflow">
+                <com.miniinthebox.android.view.circle_flow.CircleFlowIndicator android:layout_gravity="bottom|center" android:id="@id/trip_home_banner_viewflow_indic" android:padding="7.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" easymob:activeColor="#7f2a333e" easymob:inactiveColor="#332a333e" easymob:inactiveType="fill" easymob:activeType="fill" easymob:circleSeparation="14.0dip" easymob:radius="4.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/recommond" android:background="@drawable/bg_rectangle_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="2.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/promotion" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/box_bottom" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="2.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="#ff666666" android:id="@id/bottom_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:text="@string/bottom_title" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@id/mini" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/in_logo" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/MiniInTheBox" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@id/falsh_sale" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/falsh_logo" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/FalshSale" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@id/in_time" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/intime_log" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/InTime" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

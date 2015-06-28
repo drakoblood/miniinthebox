@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/buttoncolor" android:id="@id/note_txt" android:background="@color/white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:background="@color/bgcolor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_below="@id/title_layout">
+        <Button android:textColor="#ff000000" android:id="@id/home_button" android:background="@drawable/checkout_success_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/Home" android:layout_weight="1.0" />
+        <Button android:textColor="#ff000000" android:id="@id/order_button" android:background="@drawable/checkout_success_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/MyOrders" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

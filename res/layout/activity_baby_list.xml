@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bgcolor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/titlerl" android:background="@drawable/top_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/back" android:layout_marginLeft="10.0dip" style="@style/backstyle" />
+        <ImageView android:id="@id/buycar" style="@style/rightstyle" />
+        <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/menu_local_shortcut_number" android:background="@drawable/indicator_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_marginRight="12.0dip" android:includeFontPadding="false" android:layout_alignParentRight="true" />
+        <TextView android:textStyle="bold" android:id="@id/title" android:focusable="true" android:focusableInTouchMode="true" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/buycar" android:layout_toRightOf="@id/back" style="@style/titlestyle" />
+    </RelativeLayout>
+    <com.miniinthebox.android.view.LoadingInfoView android:id="@id/baby_list_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/noresultview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="18.0sp" android:textColor="@color/buttoncolor" android:gravity="center" android:id="@id/noitemtext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Sorryyoursearchreturnednoresults" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="52.0dip">
+        <ImageView android:id="@id/baby_list_sort_button" android:background="@drawable/bl_sort_tab_bg" android:layout_width="58.0dip" android:layout_height="fill_parent" android:scaleType="centerInside" />
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff222222" android:gravity="center" android:id="@id/baby_list_sort" android:background="@drawable/bl_list_sort_tab_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/Sort" android:layout_weight="1.0" />
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff222222" android:gravity="center" android:id="@id/baby_list_refine" android:background="@drawable/bl_list_sort_tab_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/Refine" android:layout_weight="1.0" />
+    </LinearLayout>
+    <com.miniinthebox.android.view.IOSListView android:scrollbarStyle="outsideOverlay" android:layout_gravity="center_horizontal" android:id="@id/baby_list_list" android:background="#00000000" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollingCache="false" android:cacheColorHint="@color/alpha" android:divider="@color/transparent" android:dividerHeight="0.0dip" />
+</LinearLayout>

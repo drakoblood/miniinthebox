@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bgcolor" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <include layout="@layout/co_shipaddress" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/noAddress_tips" android:background="@color/white" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/AddaNewShippingAddress" />
+    </RelativeLayout>
+    <include layout="@layout/co_shipmethod" />
+    <include layout="@layout/co_paymethod" />
+    <include layout="@layout/co_coupon" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/buttoncolor" android:background="@color/white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/CartSummary" />
+</LinearLayout>

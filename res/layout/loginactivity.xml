@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bgcolor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.miniinthebox.android" xmlns:facebook="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/titleroot" android:background="@drawable/top_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textColor="@color/buttoncolor" android:id="@id/back" android:background="@drawable/small_gray_button" android:layout_width="@dimen/top_button_width" android:layout_marginLeft="10.0dip" android:minWidth="60.0dip" android:text="@string/Cancel" style="@style/backstyle" />
+        <TextView android:textStyle="bold" android:id="@id/title" android:focusable="true" android:focusableInTouchMode="true" style="@style/titlestyle" />
+        <ImageView android:id="@id/buycar" style="@style/rightstyle" />
+    </RelativeLayout>
+    <ScrollView android:background="@color/bgcolor" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/bgcolor" style="@style/vllff">
+            <Button android:textColor="@color/buttoncolor" android:id="@id/create" android:background="@drawable/login_selector" android:layout_marginTop="10.0dip" android:text="@string/Register" style="@style/bigbuttonstyle" />
+            <com.facebook.widget.LoginButton android:id="@id/signInWithFacebook" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="10.0dip" facebook:confirm_logout="false" facebook:fetch_user_info="true" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="#ffd9d9d9" android:id="@id/or" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="or" android:layout_centerInParent="true" />
+                <View android:background="#ffd9d9d9" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/or" android:layout_centerVertical="true" />
+                <View android:background="#ffd9d9d9" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/or" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <EditText android:id="@id/email" android:background="@drawable/inputbg" android:layout_height="60.0dip" android:layout_marginTop="20.0dip" android:hint="@string/Email" style="@style/bigeditstyle" />
+            <EditText android:id="@id/passwd" android:background="@drawable/inputbg" android:layout_height="60.0dip" android:hint="@string/Password" android:inputType="textPassword" style="@style/bigeditstyle" />
+            <Button android:id="@id/signin" android:layout_marginTop="20.0dip" android:text="@string/SignIn" style="@style/bigbuttonstyle" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff919191" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/forgetpass" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/ForgotPassword" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

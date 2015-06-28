@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="100.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/baby_list_img" android:layout_width="wrap_content" android:layout_height="90.0dip" android:layout_margin="4.0dip" android:src="@drawable/default_picture" android:scaleType="centerCrop" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/baby_list_vg_1" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_toRightOf="@id/baby_list_img" android:layout_below="@id/baby_list_image_vg">
+        <TextView android:textSize="13.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="这是一个商品" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="$233" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/baby_list_vg_2" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_toRightOf="@id/baby_list_img" android:layout_below="@id/baby_list_vg_1">
+        <TextView android:textSize="13.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="USD" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="$200" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="USD" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="$200" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/baby_list_vg_3" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_toRightOf="@id/baby_list_img" android:layout_below="@id/baby_list_vg_2">
+        <TextView android:textSize="13.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="USD" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="$200" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom|left|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/baby_list_img" android:layout_below="@id/baby_list_vg_3">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/send_in_one_day" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/shipping_free" />
+    </LinearLayout>
+    <ImageView android:id="@id/iv_baby_list_fav_rb" android:background="@drawable/baby_list_heart" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/pressimg" android:background="@drawable/conver_item_bg" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+</RelativeLayout>

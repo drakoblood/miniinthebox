@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/rl_bill_address" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MyAddressLayoutStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/textViewBillingAddress" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/BillingAddress" style="@style/MyAccountTextStyle1" />
+    <ImageView android:id="@id/imageView_SplitLine" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@color/me_split_color" />
+    <RelativeLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/imageview_detail">
+            <TextView android:textSize="@dimen/text_size_14sp" android:textColor="@color/black" android:id="@id/textView_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/text_size_12sp" android:textColor="@color/buttoncolor" android:id="@id/textView_address" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MyAddressItemAddress" />
+            <TextView android:textSize="@dimen/text_size_12sp" android:textColor="@color/buttoncolor" android:id="@id/textView_state" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MyAddressItemAddress" />
+            <TextView android:textSize="@dimen/text_size_14sp" android:textColor="@color/black" android:id="@id/textView_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView android:id="@id/imageview_detail" android:background="@drawable/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/splitbg" android:background="@color/bgcolor" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/rl_ship_address" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/textViewProfile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/BillingAddress" style="@style/MyAccountTextStyle1" />
+        <ImageView android:id="@id/imageView_SplitLine" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@color/me_split_color" />
+    </LinearLayout>
+</LinearLayout>

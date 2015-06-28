@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/titleroot" android:background="@drawable/top_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textColor="@color/buttoncolor" android:id="@id/back" android:background="@drawable/small_gray_button" android:layout_width="@dimen/top_button_width" android:layout_marginLeft="10.0dip" android:text="@string/Cancel" style="@style/backstyle" />
+    <TextView android:textStyle="bold" android:id="@id/title" android:focusable="true" android:focusableInTouchMode="true" style="@style/titlestyle" />
+    <Button android:textColor="@color/buttoncolor" android:id="@id/done" android:background="@drawable/small_gray_button" android:minWidth="60.0dip" android:text="@string/Done" style="@style/rightstyle" />
+</RelativeLayout>

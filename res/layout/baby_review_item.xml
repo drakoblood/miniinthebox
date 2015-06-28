@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="11.0sp" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/By" />
+        <TextView android:textSize="11.0sp" android:textColor="@*android:color/darker_gray" android:gravity="center" android:id="@id/baby_review_customer_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/review_verfied" />
+        <TextView android:textSize="11.0sp" android:gravity="center" android:id="@id/baby_review_verifide_buyer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="@string/VerifiedBuyer" />
+        <TextView android:textSize="11.0sp" android:gravity="right|center" android:id="@id/baby_review_date" android:paddingRight="4.0dip" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="TextView" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RatingBar android:id="@id/baby_review_ratingbar" android:layout_width="wrap_content" android:layout_height="8.0dip" android:isIndicator="true" android:layout_centerVertical="true" style="@style/MyFavRatingBarSmall" />
+        <TextView android:textSize="11.0sp" android:id="@id/formattime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/black" android:id="@id/baby_review_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="TextView" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/baby_review_img_vg" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="52.0dip">
+        <ImageView android:id="@id/baby_review_img_1" android:visibility="visible" android:layout_width="52.0dip" android:layout_height="52.0dip" android:layout_marginLeft="4.0dip" android:scaleType="centerCrop" />
+        <ImageView android:id="@id/baby_review_img_2" android:visibility="visible" android:layout_width="52.0dip" android:layout_height="52.0dip" android:layout_marginLeft="4.0dip" android:scaleType="centerCrop" />
+        <ImageView android:id="@id/baby_review_img_3" android:visibility="visible" android:layout_width="52.0dip" android:layout_height="52.0dip" android:layout_marginLeft="4.0dip" android:scaleType="centerCrop" />
+    </LinearLayout>
+</LinearLayout>

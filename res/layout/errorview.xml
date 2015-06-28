@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/bgcolor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/loadingparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/loadingimg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/loading" />
+        <TextView android:textSize="18.0dip" android:textColor="#ff545454" android:id="@id/loading_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/loading" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/errorparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="100.0">
+        <TextView android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linearLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="70.0">
+            <ImageView android:id="@id/tipview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tip" android:scaleType="center" />
+            <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="#ff959696" android:id="@id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bgcolor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.miniinthebox.android">
+    <RelativeLayout android:id="@id/titleroot" android:background="@drawable/top_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/back" android:background="@drawable/small_gray_button" android:layout_width="@dimen/top_button_width" android:layout_marginLeft="10.0dip" android:text="@string/Cancel" style="@style/backstyle" />
+        <TextView android:textStyle="bold" android:id="@id/title" android:focusable="true" android:focusableInTouchMode="true" style="@style/titlestyle" />
+        <Button android:id="@id/done" android:background="@drawable/small_gray_button" android:minWidth="60.0dip" android:text="@string/Done" style="@style/rightstyle" />
+    </RelativeLayout>
+    <ScrollView android:background="@color/white" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip">
+        <LinearLayout android:orientation="vertical" android:padding="10.0dip" style="@style/vllff">
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/buttoncolor" android:id="@id/custometitle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <View android:background="@color/imgfixbg" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="5.0dip" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/buttoncolor" android:id="@id/customedes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/skulist" android:layout_marginTop="10.0dip" style="@style/vllff" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/customeimg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:minWidth="200.0dip" android:minHeight="200.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

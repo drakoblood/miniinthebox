@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bgcolor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/backtitlelayout" />
+    <ImageView android:background="@color/me_split_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">"
+<LinearLayout android:orientation="vertical" android:id="@id/rl_ship_address" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MyAddressLayoutStyle">
+                <TextView android:id="@id/textViewProfile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ShippingAddress" style="@style/MyAccountTextStyle1" />
+                <ImageView android:id="@id/imageView_SplitLine" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@color/me_split_color" />
+                <ListView android:id="@id/listView_ship" android:visibility="gone" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/rl_ship_method" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MyAddressLayoutStyle">
+                <TextView android:id="@id/textview_ship_method" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ShippingMethod" style="@style/MyAccountTextStyle1" />
+                <Spinner android:id="@id/spinner1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/rl_payment_method" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MyAddressLayoutStyle">
+                <TextView android:id="@id/textview_payment_method" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/PaymentMethod" style="@style/MyAccountTextStyle1" />
+                <Spinner android:id="@id/spinner1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/rl_coupon_method" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MyAddressLayoutStyle">
+                <TextView android:id="@id/textview_coupon_method" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Coupon" style="@style/MyAccountTextStyle1" />
+                <ImageView android:id="@id/imageView_SplitLine" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@color/me_split_color" />
+                <EditText android:id="@id/editText1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:ems="10" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bgcolor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.miniinthebox.android">
+    <include layout="@layout/titlelayout" />
+    <ImageView android:background="@color/me_split_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:id="@id/no_result" android:background="@color/bgcolor" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="18.0sp" android:textColor="@color/buttoncolor" android:gravity="center" android:id="@id/no_result_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/YouHaventBuyAnythingnDoSomeShoppingNow" android:layout_below="@id/no_result_img" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <com.miniinthebox.android.view.IOSListView android:scrollbarStyle="outsideOverlay" android:layout_gravity="center_horizontal" android:id="@id/listView1" android:background="@color/white" android:visibility="gone" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:scrollingCache="false" android:cacheColorHint="@color/alpha" android:divider="@color/transparent" android:dividerHeight="1.0dip" />
+    <com.miniinthebox.android.view.LoadingInfoView android:id="@id/refine_loading" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

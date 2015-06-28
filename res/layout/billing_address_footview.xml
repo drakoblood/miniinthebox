@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/splitbg" android:background="@color/bgcolor" android:layout_width="fill_parent" android:layout_height="15.0dip" />
+    <Button android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/button_add_addressbook" android:background="@drawable/red_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/AddaNewShippingAddress" />
+</LinearLayout>

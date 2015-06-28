@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bgcolor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.miniinthebox.android">
+    <RelativeLayout android:id="@id/titleroot" android:background="@drawable/top_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView android:id="@id/back" android:layout_marginLeft="10.0dip" style="@style/backstyle" />
+        <TextView android:textStyle="bold" android:id="@id/title" android:focusable="true" android:focusableInTouchMode="true" style="@style/titlestyle" />
+        <Button android:id="@id/done" android:background="@drawable/small_gray_button" android:minWidth="60.0dip" android:text="@string/Done" style="@style/rightstyle" />
+    </RelativeLayout>
+    <com.miniinthebox.android.view.LoadingInfoView android:id="@id/refine_loading" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/summary_layout" android:background="@color/bgcolor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/CARTTOTAL" />
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/black" android:id="@id/textview_total_currency" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toLeftOf="@id/textview_total_prices" />
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/black" android:id="@id/textview_total_prices" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <Button android:textColor="@color/white" android:id="@id/btn_place_your_order" android:background="@drawable/red_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/PlaceYourOrder" />
+        </LinearLayout>
+        <ListView android:id="@id/ll_card_summary_listView" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:divider="@null" android:layout_above="@id/summary_layout" />
+    </RelativeLayout>
+</LinearLayout>

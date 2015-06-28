@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bgcolor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.miniinthebox.android">
+    <include layout="@layout/backtitlelayout" />
+    <ImageView android:background="@color/me_split_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/editText_input" android:paddingRight="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:ems="10" android:drawableLeft="@drawable/search" android:drawablePadding="10.0dip" android:layout_toLeftOf="@id/btn_cancel" android:layout_alignParentLeft="true" android:layout_alignWithParentIfMissing="true" />
+            <Button android:id="@id/btn_cancel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="Cancel" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <Button android:id="@id/btn_clear_text" android:background="@drawable/menu_close" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="" android:layout_alignRight="@id/editText_input" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:background="@color/me_split_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="5.0dip" />
+        <ListView android:scrollbarStyle="outsideOverlay" android:layout_gravity="center_horizontal" android:id="@id/countrylist" android:background="@color/white" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="#00000000" android:scrollingCache="false" android:cacheColorHint="@color/alpha" android:divider="@color/me_split_color" android:dividerHeight="1.0dip" />
+    </LinearLayout>
+</LinearLayout>

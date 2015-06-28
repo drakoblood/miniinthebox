@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/trip_title_topview" android:layout_marginTop="0.0dip" layout="@layout/trip_header" />
+    <TabHost android:id="@*android:id/tabhost" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@*android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <TabWidget android:orientation="horizontal" android:id="@*android:id/tabs" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.0" />
+            <include layout="@layout/tabwidget" />
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>

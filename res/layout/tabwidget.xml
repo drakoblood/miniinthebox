@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/realtabs" android:background="@drawable/tab_bg" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_hight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/tab_one" layout="@layout/main_tab_item" />
+    <include android:id="@id/tab_two" layout="@layout/main_tab_item" />
+    <include android:id="@id/tab_three" layout="@layout/main_tab_item" />
+    <include android:id="@id/tab_four" layout="@layout/main_tab_item" />
+    <include android:id="@id/tab_five" layout="@layout/main_tab_item" />
+</LinearLayout>

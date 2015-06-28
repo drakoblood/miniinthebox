@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bgcolor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.miniinthebox.android">
+    <include layout="@layout/backtitlelayout" />
+    <com.miniinthebox.android.view.LoadingInfoView android:id="@id/baby_list_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_myinforlayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">"
+<LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" style="@style/MyAccountLayoutStyle">
+            <TextView android:id="@id/textViewProfile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Profile" style="@style/MyAccountTextStyle1" />
+            <ImageView android:id="@id/imageView_SplitLine" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@color/me_split_color" />
+            <RelativeLayout android:id="@id/myaccount_profile" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TableLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TableRow android:id="@id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:id="@id/textViewSexTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Sex" style="@style/MyAccountTextStyle2" />
+                        <TextView android:id="@id/textViewSex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                    </TableRow>
+                    <TableRow android:id="@id/tableRow2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:id="@id/textViewNameTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Name" style="@style/MyAccountTextStyle2" />
+                        <TextView android:id="@id/textViewName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Herry Graver" />
+                    </TableRow>
+                    <TableRow android:id="@id/tableRow3" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:id="@id/textViewPhoneTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Phone" style="@style/MyAccountTextStyle2" />
+                        <TextView android:id="@id/textViewPhone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="123456" />
+                    </TableRow>
+                </TableLayout>
+                <ImageView android:id="@id/imageView_into_myinfor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" style="@style/MyAccountLayoutStyle">
+            <TextView android:id="@id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Email" style="@style/MyAccountTextStyle1" />
+            <ImageView android:id="@id/imageView_SplitLine" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@color/me_split_color" android:layout_below="@id/textViewEmail" />
+            <RelativeLayout android:id="@id/rl_modify_email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:id="@id/textViewEmail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12345678@163.com" style="@style/MyAccountTextStyle2" />
+                <TextView android:id="@id/textViewSex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/textViewEmail" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@id/rl_password" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" style="@style/MyAccountLayoutStyle">
+            <TextView android:id="@id/textViewPassword" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Password" style="@style/MyAccountTextStyle1" />
+            <ImageView android:id="@id/imageView_into_password" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

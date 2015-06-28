@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/rl_order" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_gravity="center_vertical" android:background="@color/imgfixbg" android:padding="1.0dip" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_alignLeft="@id/rl_order" android:layout_alignTop="@id/rl_order">
+            <ImageView android:id="@id/imageView1" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/default_picture" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:ellipsize="end" android:id="@id/textview_sku" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <LinearLayout android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="11.0sp" android:textColor="@color/littlered" android:id="@id/textview_item_currency" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/littlered" android:id="@id/textview_item_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+            </LinearLayout>
+            <TableLayout android:id="@id/tl_sku" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <TableRow android:id="@id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="color" />
+                    <TextView android:textColor="@color/black" android:id="@id/textview_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="White" />
+                </TableRow>
+                <TableRow android:id="@id/tableRow2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="size" />
+                    <TextView android:textColor="@color/black" android:id="@id/textview_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="S" />
+                </TableRow>
+                <TableRow android:id="@id/tableRow3" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="qty" />
+                    <TextView android:textColor="@color/black" android:id="@id/textview_qty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="2" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

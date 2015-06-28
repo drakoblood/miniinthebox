@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bgcolor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.miniinthebox.android">
+    <RelativeLayout android:id="@id/titleroot" android:background="@drawable/top_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/back" android:background="@drawable/small_gray_button" android:layout_width="@dimen/top_button_width" android:layout_marginLeft="10.0dip" android:minWidth="@dimen/titlebuttonsize" android:text="@string/Cancel" style="@style/backstyle" />
+        <TextView android:textStyle="bold" android:id="@id/title" android:focusable="true" android:focusableInTouchMode="true" style="@style/titlestyle" />
+        <ImageView android:id="@id/buycar" style="@style/rightstyle" />
+    </RelativeLayout>
+    <ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" style="@style/vllff">
+            <EditText android:id="@id/email" android:background="@drawable/inputbg" android:layout_marginTop="20.0dip" android:hint="@string/Email" style="@style/bigeditstyle" />
+            <Button android:id="@id/reset" android:layout_marginTop="20.0dip" android:text="@string/restpd" style="@style/bigbuttonstyle" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
